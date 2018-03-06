@@ -12,37 +12,38 @@ body {
     width:50%;
     height: 100%;
     margin: 0 auto;
-    padding:0;
+    padding:3px;
     opacity: .8;
     border-radius: 10%;
     }
 #topbar {
-    height: 200px;
+    height: 21.33%;
     width:41.66%;
-    margin: 0 auto;
+    margin: 5px auto;
     padding:0;
     border:2px ridge black;
-    border-width: 3%;
-    border-radius: 60%;
-    
-    
+    border-radius: 60%;    
 }
 h1 {
     color:#BDE1DE;
-    font-size: 450%;
     text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size:5vw;
+    padding:0;
+    margin: 0;
      
 }
 h2 {
+    font-size:5vw;
     color:#A7C8BF;
-    font-size: 450%;
     text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding:0 0 20px 0;
+    margin: 0;
 }
 #toptabs {
     width:100%;
-    margin:20px auto;
+    margin:25px auto;
     height:35px;
     text-align: center;
     
@@ -52,17 +53,16 @@ a:hover {
     color:rgb(81, 207, 245);
 }
 a {
-    
     text-decoration: none;
     color:rgb(255, 149, 28);
-    font-size:20px;
-    padding-right:9px;
+    font-size:1.3vw;
+    padding-right:10px;    
 }
 h3 {
     color:rgb(30, 224, 88);
-    font-size:30px;
+    font-size:3vw;
     text-align: center;
-    padding-top:5px;
+    padding-top:2%;
     
 }
 #main-para {
