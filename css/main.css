@@ -31,6 +31,7 @@ body {
   background-size:100%;
 }
 .dropmenu {
+  float:right;
   position: relative;
   display:inline-block;
 }
@@ -83,10 +84,12 @@ h1 {
 
 }
 .connect {
+  float:left;
   color:red;
   padding-left:5%;
 }
 .about {
+  float:right;
   color:red;
   padding-right:5%;
   text-align: right;
