@@ -28,10 +28,10 @@ body {
   margin:0px;
   padding:0;
   background: url("../images/nightsky.jpg");
-  background-size:100%;
+  background-position: top;
 }
 .dropmenu {
-  float:right;
+  float:right !important;
   position: relative;
   display:inline-block;
 }
@@ -84,12 +84,12 @@ h1 {
 
 }
 .connect {
-  float:left;
+  float:left !important;
   color:red;
   padding-left:5%;
 }
 .about {
-  float:right;
+  float:right !important;
   color:red;
   padding-right:5%;
   text-align: right;
