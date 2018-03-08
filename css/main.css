@@ -15,15 +15,15 @@
 body {
   background-image: url("../images/nightsky.jpg");
   background-size:100%;
+  margin:0;
+  padding:0;
 }
 .dropmenu {
   position: relative;
   display:inline-block;
-  float:right;
+  align-content: right:
 }
-#clear {
-  clear:right;
-}
+
 .menubtn  {
   color    : white;
   border   : none;
@@ -61,13 +61,16 @@ body {
 }
 h1 {
   color:white;
-  text-align:center;
-  padding:5%;
-  position: relative;
-  font-size:9vw;
+  padding:1%;
+  text-align: center;
+  font-size:7vw;
   margin-top: 140px;
-  border:5px ridge black;
-  border-radius: 50%
+  border: 1px solid black;
+  border-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 75%;
+  padding: 50px;
+  
 
 
 }
