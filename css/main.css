@@ -12,19 +12,22 @@
     float:left;
     box-sizing: border-box; }
 }
+body {
+  background-image: url("../images/nightsky.jpg");
+  background-size:100%;
+}
 .dropmenu {
   position: relative;
   display:inline-block;
-  margin-right:6%;
   float:right;
 }
 .menubtn {
   background-color: #4CAF50;
   color: white;
-  padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+
 }
 .dropmenu-content {
   right: 0;
