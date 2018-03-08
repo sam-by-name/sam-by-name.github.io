@@ -19,8 +19,10 @@ body {
 .dropmenu {
   position: relative;
   display:inline-block;
-  margin-left:80%;
-  margin-top:15px;
+  float:right;
+}
+#clear {
+  clear:right;
 }
 .menubtn  {
   color    : white;
