@@ -30,20 +30,17 @@ body {
   background: url("../images/nightsky.jpg");
   background-position: top;
 }
-.dropmenu {
-  float:right !important;
+.dropmenu1 .dropmenu2{
   position: relative;
   display:inline-block;
 }
-
 .menubtn  {
   color    : white;
   border   : none;
   cursor   : pointer;
   font-size: 2.5rem;
 }
-.dropmenu-content {
-
+.dropmenu1-content {
   display: none;
   position: absolute;
   min-width: 5%;
@@ -51,20 +48,41 @@ body {
   padding: 12px 9px 0 9px;
   z-index: 1;
 }
-.dropmenu-content a {
+.dropmenu1-content a {
   color: white;
   padding: 12px 0px 0px 6px;
   text-decoration: none;
   display: block;
 }
-.dropmenu:hover .dropmenu-content {
+.dropmenu1:hover .dropmenu1-content {
   display: block;
 }
-.dropmenu-content a:hover {
+.dropmenu1-content a:hover {
   background: rgba(0, 0, 0, 0.6);
   padding:6px 12px;
 }
-.dropmenu:hover .menubtn {
+.dropmenu2-content {
+  display: none;
+  position: absolute;
+  min-width: 5%;
+  box-shadow: 0px 4px 16px 4px rgba(0,0,0,0.6);
+  padding: 12px 9px 0 9px;
+  z-index: 1;
+}
+.dropmenu2-content a {
+  color: white;
+  padding: 12px 0px 0px 6px;
+  text-decoration: none;
+  display: block;
+}
+.dropmenu2:hover .dropmenu2-content {
+  display: block;
+}
+.dropmenu2-content a:hover {
+  background: rgba(0, 0, 0, 0.6);
+  padding:6px 12px;
+}
+.dropmenu1:hover .dropmenu2:hover .menubtn {
   background: rgba(0, 0, 0, 0);
 }
 .menubtn:hover {
@@ -93,9 +111,6 @@ h1 {
   color:red;
   padding-right:5%;
   text-align: right;
-}
-.clear {
-  clear:both;
 }
 footer {
   position:absolute;
