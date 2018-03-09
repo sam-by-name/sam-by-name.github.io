@@ -4,7 +4,19 @@ body {
   background: url("../images/nightsky.jpg");
   background-position: top;
 }
-.dropmenu1 .dropmenu2{
+.top-row {
+  margin-top:2%;
+}
+h1 {
+  color:white;
+  text-align: center;
+  font-size:3.8rem !important;
+  padding-top: 15%;
+  padding-right:25%;
+  height:160px;
+}
+.dropmenu {
+  text-align: left;
   position: relative;
   display:inline-block;
 }
@@ -14,7 +26,7 @@ body {
   cursor   : pointer;
   font-size: 1.6rem;
 }
-.dropmenu1-content {
+.dropmenu-content {
   display: none;
   position: absolute;
   min-width: 5%;
@@ -22,57 +34,27 @@ body {
   padding: 12px 9px 0 9px;
   z-index: 1;
 }
-.dropmenu1-content a {
+.dropmenu-content a {
   color: white;
   padding: 12px 0px 0px 6px;
   text-decoration: none;
   display: block;
 }
-.dropmenu1:hover .dropmenu1-content {
+.dropmenu:hover .dropmenu-content {
   display: block;
 }
-.dropmenu1-content a:hover {
+.dropmenu-content a:hover {
   background: rgba(0, 0, 0, 0.6);
   padding:6px 12px;
+
 }
-.dropmenu2-content {
-  display: none;
-  position: absolute;
-  min-width: 5%;
-  box-shadow: 0px 4px 16px 4px rgba(0,0,0,0.6);
-  padding: 12px 9px 0 9px;
-  z-index: 1;
-}
-.dropmenu2-content a {
-  color: white;
-  padding: 12px 0px 0px 6px;
-  text-decoration: none;
-  display: block;
-}
-.dropmenu2:hover .dropmenu2-content {
-  display: block;
-}
-.dropmenu2-content a:hover {
-  background: rgba(0, 0, 0, 0.6);
-  padding:6px 12px;
-}
-.dropmenu1:hover .dropmenu2:hover .menubtn {
+.dropmenu:hover .menubtn {
   background: rgba(0, 0, 0, 0);
 }
 .menubtn:hover {
   color:white;
 }
-h1 {
-  color:white;
-  padding:1%;
-  text-align: center;
-  font-size:3.8rem !important;
-  margin-top: 15%;
-  background-color: rgba(0, 0, 0, 0.3);
-  height:160px;
-}
 .connect {
-
   color:red;
   padding-left:5%;
   text-align: left;
@@ -83,7 +65,7 @@ h1 {
   text-align: right;
 }
 footer {
-  position: fixed;
+  position: absolute;
   left:0;
   right:0;
   bottom:0;
@@ -91,6 +73,7 @@ footer {
 .container p {
   width:100% !important;
   color:white;
-  background-color: aquamarine;
-  position: static;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  height:100%;
 }
