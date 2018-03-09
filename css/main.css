@@ -1,23 +1,19 @@
 body {
   margin:0px;
   padding:0;
+  width:100%;
   background: url("../images/nightsky.jpg");
   background-position: top;
 }
 .top-row {
-  margin-top:2%;
+  height:160px;
 }
 h1 {
   color:white;
-  text-align: center;
-  font-size:3.8rem !important;
-  padding-top: 15%;
-  padding-right:25%;
-  height:160px;
+  text-align:center;
 }
 .dropmenu {
-  text-align: left;
-  position: relative;
+  position:relative;
   display:inline-block;
 }
 .menubtn  {
@@ -54,24 +50,23 @@ h1 {
 .menubtn:hover {
   color:white;
 }
-.connect {
+#connect {
   color:red;
-  padding-left:5%;
-  text-align: left;
+  text-align: center !important;
 }
-.about {
-  color:red;
-  padding-right:5%;
-  text-align: right;
+#about {
+  color:white;
+  text-align: center !important;
 }
 footer {
-  position: absolute;
+  position: relative;
   left:0;
   right:0;
   bottom:0;
 }
 .container p {
   width:100% !important;
+  padding:1%;
   color:white;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
