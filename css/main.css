@@ -2,8 +2,12 @@ body {
   margin              :0px;
   padding             :0;
   width               :100%;
-  background          : url("../images/nightsky.jpg");
+  background          : url("../images/nightsky-ex.jpg");
   background-position : top;
+  left            : 0;
+  right           : 0;
+  bottom          : 0;
+
 }
 .top-row {
   padding-top     :20px;
