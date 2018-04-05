@@ -84,9 +84,6 @@ footer {
   padding         : 1%;
   color           : white;
   background-color: rgba(0, 0, 0, 0.6);
-  position        : relative;
-  height          : 100%;
-  font-size       : 1em;
 }
 .altver {
   color           : white;
