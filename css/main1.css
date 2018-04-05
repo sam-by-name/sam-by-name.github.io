@@ -5,6 +5,11 @@ body {
     background          : url("../images/nightsky-ex.png");
     background-position : top;
   }
+  .top-row {
+    padding-top     :20px;
+    height          :160px;
+  }
+
   .returnhome {
     color           : whitesmoke;
     text-align      : center;
