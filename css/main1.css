@@ -19,6 +19,7 @@ body {
   }
   .returnhome a:hover {
     color           : #BDE1DE;
+    text-decoration : none;
   }
   .dropmenu {
     position        : relative;
