@@ -21,12 +21,13 @@ function myChess()  {
 }
 
 function myPyramid()  {
-    var x = document.getElementById("pyramid").value;
-    document.getElementById("pyramid1").innerHTML = triangle;
-      var triangle = x;                             
-      for (let i = 0; i < x; i++) {
-        (triangle += "#") + (+ "\n");
-      }
-    alert(triangle);
+  var x = document.getElementById("pyramid").value;
+  document.getElementById("pyramid1").innerHTML = triangle;{
+    var triangle = x;                             
+    for (let i = 0; i < x; i++) {
+      (triangle += "#") +  "\n";
     }
+  alert(triangle);
+  }
+}
                      
