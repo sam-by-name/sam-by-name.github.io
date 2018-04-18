@@ -2,8 +2,7 @@ body {
   margin              :0px;
   padding             :0;
   width               :100%;
-  background          : url("../images/nightsky-ex.png");
-  background-position : top;
+  background          :linear-gradient(Black,rgb(34, 127, 158), Black);
 }
 .top-row {
   padding-top         :1%;
@@ -74,15 +73,18 @@ body {
   color               : white;
 } 
 .container p {
-  text-shadow         : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  text-shadow         : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size           : 1.1em;
+
 }
-.container p span {
-  
-  width               : 1px;
-  background          : black;
-  transition          : width 5s;
+#effects { 
+  width           : 1px;
+  background      : black;
+  transition      : width 5s;
   transition-timing-function : cubic-bezier(0,0,1,1);
+}
+#effects:hover  {
+  width               : 100%;
 }
 .connect {
   color               : white;
@@ -115,4 +117,10 @@ h2 {
 }
 h5  {
   text-shadow         : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+code {
+  color               : rgb(14, 231, 14) !important;
+  background-color    : rgba(0, 0, 0, 0.856); 
+  padding             : 4px;
+  border-radius       : 20%;
 }
