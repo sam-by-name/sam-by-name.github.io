@@ -76,7 +76,9 @@ body {
   } 
   .container p {
     text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size       : 1.1em;
   }
+
   .connect {
     color           : white;
     text-align      : center;
@@ -105,4 +107,16 @@ body {
     text-align: center;
     text-shadow     : -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
     padding-bottom   : 3%; 
+  }
+  h5  {
+    text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+
+  /*     width           : 1px;
+    background      : black;
+    transition      : width 5s;
+    transition-timing-function : cubic-bezier(0,0,1,1);
+  }
+  .container p:hover{
+    width           : 100%;
   }
