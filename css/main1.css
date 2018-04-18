@@ -1,122 +1,118 @@
 body {
-    margin              :0px;
-    padding             :0;
-    width               :100%;
-    background          : url("../images/nightsky-ex.png");
-    background-position : top;
-  }
-  .top-row {
-    padding-top     :1%;
-  }
+  margin              :0px;
+  padding             :0;
+  width               :100%;
+  background          : url("../images/nightsky-ex.png");
+  background-position : top;
+}
+.top-row {
+  padding-top         :1%;
+}
+.returnhome {
+  color               : whitesmoke;
+  text-align          : center;
+  position            : relative;
+  text-shadow         : 0px 2px black, 0 2px black, 2px 0px black, 0 2px black;
+  opacity             : 0.9;
+  font-size           : 4rem;
+}
+.returnhome a {
+  text-decoration     : none;
+  color               : whitesmoke;  
+}
+.returnhome a:hover {
+  color               : #BDE1DE;
+  text-decoration     : none;
+}
+.dropmenu {
+  position            : relative;
+  display             : inline-block;
+}
+.menubtn  {
+  color               : #BDE1DE;
+  border              : none;
+  cursor              : pointer;
+  font-size           : 2rem;
+  text-shadow         : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  background-color    : rgba(0, 0, 0, 0);
+  position            : center;
+}
+.dropmenu-content {
+  display             : none;
+  position            : absolute;
+  width               : 80%;
+  text-shadow         : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  box-shadow          : 0px 4px 16px 4px rgba(0,0,0,0.6);
+  background-color    : rgba(0,0,0,0.6);
+  padding             : 12px 12px 0 12px;
+  z-index             : 1;
+}
+.dropmenu-content a {
+  color               : white;
+  padding             : 12px 0px 0px 12px;
+  text-decoration     : none;
+  display             : block;
+}
+.dropmenu:hover .dropmenu-content {
+  display             : block;
+}
+.dropmenu-content a:hover {
+  background          : rgba(0, 0, 0, 0.6);
+  padding             : 6px 12px;
 
-  .returnhome {
-    color           : whitesmoke;
-    text-align      : center;
-    position: relative;
-    text-shadow     : 0px 2px black, 0 2px black, 2px 0px black, 0 2px black;
-    opacity         : 0.9;
-    font-size       : 4rem;
-  }
-  .returnhome a {
-    text-decoration : none;
-    color           : whitesmoke;  
-  }
-  .returnhome a:hover {
-    color           : #BDE1DE;
-    text-decoration : none;
-  }
-  .dropmenu {
-    position        : relative;
-    display         : inline-block;
-  }
-  .menubtn  {
-    color           : #BDE1DE;
-    border          : none;
-    cursor          : pointer;
-    font-size       : 2rem;
-    text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    background-color: rgba(0, 0, 0, 0);
-    position        : center;
-  }
-  .dropmenu-content {
-    display         : none;
-    position        : absolute;
-    width           : 80%;
-    text-shadow     : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    box-shadow      : 0px 4px 16px 4px rgba(0,0,0,0.6);
-    background-color: rgba(0,0,0,0.6);
-    padding         : 12px 12px 0 12px;
-    z-index         : 1;
-  }
-  .dropmenu-content a {
-    color           : white;
-    padding         : 12px 0px 0px 12px;
-    text-decoration : none;
-    display         : block;
-  }
-  .dropmenu:hover .dropmenu-content {
-    display         : block;
-  }
-  .dropmenu-content a:hover {
-    background      : rgba(0, 0, 0, 0.6);
-    padding         : 6px 12px;
+}
+.dropmenu:hover .menubtn {
+  background          : rgba(0, 0, 0, 0);
+}
+.menubtn:hover {
+  color               : white;
+}
+.main-article {
+  margin              : 2% 0;  
+  width               : 100% !important;
+  padding             : 1%;
+  color               : white;
+} 
+.container p {
+  text-shadow         : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size           : 1.1em;
+}
+.container p span {
   
-  }
-  .dropmenu:hover .menubtn {
-    background      : rgba(0, 0, 0, 0);
-  }
-  .menubtn:hover {
-    color           : white;
-  }
-  .main-article {
-    margin          : 2% 0;  
-    width           : 100% !important;
-    padding         : 1%;
-    color           : white;
-  } 
-  .container p {
-    text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    font-size       : 1.1em;
-  }
-
-  .connect {
-    color           : white;
-    text-align      : center;
-  }
-  .about {
-    color           : white;
-    text-align      : center;
-  }
-  footer {
-    position        : relative;
-    left            : 0;
-    right           : 0;
-    bottom          : 0;
-    margin-top      : 3%;
-  }
-  .altver {
-    color           : white;
-    text-align      : center !important;
-  }
-  .altver a {
-    color           :white;
-    text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  }
-  h2 {
-    color:black!important;
-    text-align: center;
-    text-shadow     : -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-    padding-bottom   : 3%; 
-  }
-  h5  {
-    text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  }
-
-  /*     width           : 1px;
-    background      : black;
-    transition      : width 5s;
-    transition-timing-function : cubic-bezier(0,0,1,1);
-  }
-  .container p:hover{
-    width           : 100%;
-  }
+  width               : 1px;
+  background          : black;
+  transition          : width 5s;
+  transition-timing-function : cubic-bezier(0,0,1,1);
+}
+.connect {
+  color               : white;
+  text-align          : center;
+}
+.about {
+  color               : white;
+  text-align          : center;
+}
+footer {
+  position            : relative;
+  left                : 0;
+  right               : 0;
+  bottom              : 0;
+  margin-top          : 3%;
+}
+.altver {
+  color               : white;
+  text-align          : center !important;
+}
+.altver a {
+  color               :white;
+  text-shadow         : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+h2 {
+  color               :black!important;
+  text-align          : center;
+  text-shadow         : -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  padding-bottom      : 3%; 
+}
+h5  {
+  text-shadow         : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
