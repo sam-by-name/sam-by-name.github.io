@@ -85,6 +85,12 @@ footer {
   color           : white;
   background-color: rgba(0, 0, 0, 0.6);
 }
+.context {
+  width           : 100% !important;
+  padding         : 1%;
+  color           : white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .altver {
   color           : white;
   text-align      : center !important;
