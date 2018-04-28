@@ -125,7 +125,7 @@ h2 {
 }
 .secondRow {
   margin          : 50px 0 0 0;
-  background-color: blue;
+  /*background-color: blue;*/
   text-align      : center; 
   height          : 70px;
 }
@@ -161,4 +161,19 @@ h2 {
   }
   .container p:hover{
     width           : 100%;
-  }
+  }*/
+.minesweeper {
+  color               : rgb(248, 12, 228);
+  font-weight         : 600;       
+  background-color    : rgb(0, 24, 243);
+  padding             : 4px 9px;
+  border-radius       : 25%;
+}
+.minesweeper:hover {
+  text-decoration     : none; 
+  color               : lightcyan; 
+  background-color    : black;
+  border              : 3px solid limegreen;
+  padding             : 8px 17px;
+  font-size           : 1.4em;
+}
