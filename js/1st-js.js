@@ -18,6 +18,8 @@ function myChess()  {
   }
 }
 
+////////////////////////////////////////////////////////////////////////////////
+
 function myPyramid(x) {
   x = document.getElementById("pyramid").value;
   var result = "";                                 
@@ -29,6 +31,8 @@ function myPyramid(x) {
   }
   alert(result);
 }
+
+////////////////////////////////////////////////////////////////////////////////
 
 function fizzBuzz() {
   let sumTot ="";
@@ -51,6 +55,8 @@ function fizzBuzz() {
   alert(sumTot);
 }
 
+////////////////////////////////////////////////////////////////////////////////
+
 function palindrome() {
   str = document.getElementById("eye").value;
   var isIt = str.replace(/[\W_]/g, '').toLowerCase() ===
@@ -59,6 +65,8 @@ function palindrome() {
   alert("That is a Palindrome");
   }  else  {alert("That is not a Palindrome")};
 }
+
+////////////////////////////////////////////////////////////////////////////////
 
 function c2F() {
   let cel2Far = document.getElementById("farenConv").value;
@@ -70,3 +78,5 @@ function f2C() {
   let celsius = ((far2Cel - 32) * 5/9);
   alert(celsius);
 }
+
+////////////////////////////////////////////////////////////////////////////////
