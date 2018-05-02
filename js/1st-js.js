@@ -31,9 +31,9 @@ function myPyramid(x) {
 }
 
 function fizzBuzz() {
-  var sumTot ="";
-  for (var i = 1; i <= 100; i++) {                   // loop to iterate 100 times
-    for (var j = 1; j <= 1; j++) {                  
+  let sumTot ="";
+  for (let i = 1; i <= 100; i++) {                   // loop to iterate 100 times
+    for (let j = 1; j <= 1; j++) {                  
       let straight = "";                           // declare empty variable to be assigned "Fizz" for all divisible by 3
       let flush = "";                              // declare empty variable to be assigned "Buzz" for all divisible by 5
       let fullHouse = "" ;                         // declare empty variable to be assigned straight+flush for all divisible by 3+5                           
@@ -58,4 +58,15 @@ function palindrome() {
   if (isIt === true) {
   alert("That is a Palindrome");
   }  else  {alert("That is not a Palindrome")};
+}
+
+function c2F() {
+  let cel2Far = document.getElementById("farenConv").value;
+  let fahrenheit = ((cel2Far * 9/5) + 32);
+  alert(fahrenheit);
+}
+function f2C() {
+  let far2Cel = document.getElementById("farenConv").value;
+  let celsius = ((far2Cel - 32) * 5/9);
+  alert(celsius);
 }
