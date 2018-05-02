@@ -71,12 +71,12 @@ function palindrome() {
 function c2F() {
   let cel2Far = document.getElementById("farenConv").value;
   let fahrenheit = ((cel2Far * 9/5) + 32);
-  alert(fahrenheit);
+  alert(fahrenheit+ '\xB0F');
 }
 function f2C() {
   let far2Cel = document.getElementById("farenConv").value;
   let celsius = ((far2Cel - 32) * 5/9);
-  alert(celsius);
+  alert(celsius + '\xB0C');
 }
 
 ////////////////////////////////////////////////////////////////////////////////
