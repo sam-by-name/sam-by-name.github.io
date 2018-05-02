@@ -32,7 +32,6 @@ function myPyramid(x) {
 
 function fizzBuzz() {
   var sumTot ="";
-  //x = document.getElementById("fizzBuzz").value;
   for (var i = 1; i <= 100; i++) {                   // loop to iterate 100 times
     for (var j = 1; j <= 1; j++) {                  
       let straight = "";                           // declare empty variable to be assigned "Fizz" for all divisible by 3
@@ -52,3 +51,9 @@ function fizzBuzz() {
   alert(sumTot);
 }
 
+function palindrome(str) {
+  str = document.getElementById("eye").value;
+  var isIt = str.replace(/[\W_]/g, '').toLowerCase() ===
+         str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
+  alert(isIt);
+}
