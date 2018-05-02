@@ -21,8 +21,8 @@ function myChess()  {
 function myPyramid(x) {
   x = document.getElementById("pyramid").value;
   var result = "";                                 
-  for (var i = 0; i < x; i++) {
-    for (var j = 0; j < i; j++) {
+  for (var i = 1; i <= x; i++) {
+    for (var j = 1; j <= i; j++) {
       result += "# ";
     }                      
     result += "\n";               
