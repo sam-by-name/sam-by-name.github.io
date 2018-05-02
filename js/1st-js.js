@@ -51,9 +51,11 @@ function fizzBuzz() {
   alert(sumTot);
 }
 
-function palindrome(str) {
+function palindrome() {
   str = document.getElementById("eye").value;
   var isIt = str.replace(/[\W_]/g, '').toLowerCase() ===
-         str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
-  alert(isIt);
+             str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
+  if (isIt === true) {
+  alert("That is a Palindrome");
+  }  else  {alert("That is not a Palindrome")};
 }
