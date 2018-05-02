@@ -17,7 +17,7 @@ function myChess()  {
   alert(chess);
   }
 }
-                  
+
 function myPyramid(x) {
   x = document.getElementById("pyramid").value;
   var result = "";                                 
@@ -29,3 +29,26 @@ function myPyramid(x) {
   }
   alert(result);
 }
+
+function fizzBuzz() {
+  var sumTot ="";
+  //x = document.getElementById("fizzBuzz").value;
+  for (var i = 1; i <= 100; i++) {                   // loop to iterate 100 times
+    for (var j = 1; j <= 1; j++) {                  
+      let straight = "";                           // declare empty variable to be assigned "Fizz" for all divisible by 3
+      let flush = "";                              // declare empty variable to be assigned "Buzz" for all divisible by 5
+      let fullHouse = "" ;                         // declare empty variable to be assigned straight+flush for all divisible by 3+5                           
+      if (i %3 == 0)  {                            // if the loops "i" variable is divisible by 3
+        straight ="Fizz";                          // This variable gets the value Fizz
+      } if (i %5 == 0) {                           // if the loops "i" variable is divisible by 3
+        flush ="Buzz";                             // This variable gets the value Buzz
+      } if (i %3 == 0 && i %5 == 0) {              // if the loops "i" variable is divisible by 3+5
+        fullHouse = straight + flush;              // This variable gets the value of both straight+flush
+      } 
+      sumTot += (fullHouse ||flush ||straight||i); // sumTot stores 1-100  with "Fizz"for all / 3's, 
+    }                                              // "Buzz" for all / 5's and "FizzBuzz" for all numbers divisible by both
+  sumTot += '\n';
+  }
+  alert(sumTot);
+}
+
