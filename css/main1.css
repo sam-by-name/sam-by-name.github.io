@@ -86,29 +86,36 @@ body {
 #effects:hover  {
   width               : 100%;
 }
+/************* Bottom nav bar **************/
+footer {
+  position        : relative;
+  left            : 0;
+  right           : 0;
+  bottom          : 0;
+  margin-top      : 3%;
+}
+.navTabs {
+  color           : white;
+  text-align      : center !important;
+  background-color: black !important;
+}
+.navTabs a {
+  color           :white;
+  text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
 .connect {
-  color               : white;
-  text-align          : center;
+  color           : white;
+  text-align      : center;
 }
 .about {
-  color               : white;
-  text-align          : center;
+  color           : white;
+  text-align      : center;
 }
-footer {
-  position            : relative;
-  left                : 0;
-  right               : 0;
-  bottom              : 0;
-  margin-top          : 3%;
+.cached {
+  color           : white;
+  text-align      : center;
 }
-.altver {
-  color               : white;
-  text-align          : center !important;
-}
-.altver a {
-  color               :white;
-  text-shadow         : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
+/*************^^^^^^^ Bottom nav bar ^^^^^^^**************/
 h2 {
   color               :black!important;
   text-align          : center;
