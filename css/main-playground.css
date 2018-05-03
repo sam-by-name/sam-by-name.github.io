@@ -81,7 +81,7 @@ footer {
 .navTabs {
   color           : white;
   text-align      : center !important;
-  background-color: black !important;
+  background-color: rgba(0,0,0,0.6);
 }
 .navTabs a {
   color           :white;
