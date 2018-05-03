@@ -70,14 +70,7 @@ body {
 .container p {
   text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-.connect {
-  color           : white;
-  text-align      : center;
-}
-.about {
-  color           : white;
-  text-align      : center;
-}
+/************* Bottom nav bar **************/
 footer {
   position        : relative;
   left            : 0;
@@ -85,14 +78,31 @@ footer {
   bottom          : 0;
   margin-top      : 3%;
 }
-.altver {
+.navTabs {
   color           : white;
   text-align      : center !important;
 }
-.altver a {
+.navTabs a {
   color           :white;
   text-shadow     : -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
+.connect {
+  color           : white;
+  text-align      : center;
+}
+.about {
+  color           : white;
+  text-align      : center;
+  float           : right;
+}
+.cached {
+  color           : white;
+  text-align      : center;
+}
+#clear  {
+  clear           : both;
+}
+/*************^^^^^^^ Bottom nav bar ^^^^^^^**************/
 h1 {
   text-align      : center !important; 
 }
