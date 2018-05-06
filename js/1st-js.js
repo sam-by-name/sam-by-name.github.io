@@ -80,3 +80,17 @@ function f2C() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+//annual salary = ? P/H
+
+function an2Ph (){
+  let annual = document.getElementById('annual').value;
+  let hPw = document.getElementById('weekly').value;
+  let pH = annual / 12 / 4.3 / hPw;
+  pH = roundUp(pH, 2);
+  alert("Your hourly is " + pH + "$");
+  //alert(annual);
+}
+function roundUp(num, precision) {
+  precision = Math.pow(10, 2)
+  return Math.ceil(num * precision) / precision
+}
