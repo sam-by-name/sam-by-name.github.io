@@ -117,11 +117,47 @@
           <input type="text" id="annual" placeholder="Annual Salary">
           <input type="button" onclick="an2Ph()" value="To Hourly">
           <input type="text" id="weekly" placeholder="Hours per week">
-
         </div>
       </div>
     </div>   
   </div>
+  <div class="container calc">                         <!--         Calculator        -->
+    <div class="row">
+      <div class="col-12">
+        <input class="display" id="amount" type="text" placeholder="0" disabled="disabled">
+      </div>
+    </div>
+    <div class="row firstRow2">
+      <div class="btn2 pad"><button class="clearBtn" onclick="reset()">AC</button></div>
+      <div class="btn2"><button class="delBtn" onclick="delOne()">CE</button></div>
+      <div class="btn2"><button onclick="opBtns('÷')">÷</button></div>
+      <div class="btn2"><button class="multi" onclick="opBtns('×')">×</button></div>
+    </div>
+    <div class="row secondRow2">
+      <div class="btn2 pad"><button onclick="numBtns(7)">7</button></div>
+      <div class="btn2"><button onclick="numBtns(8)">8</button></div>
+      <div class="btn2"><button onclick="numBtns(9)">9</button></div>
+      <div class="btn2"><button onclick="minusBtn('-')">-</button></div>
+    </div>
+    <div class="row thirdRow2">
+      <div class="btn2 pad"><button onclick="numBtns(4)">4</button></div>
+      <div class="btn2"><button onclick="numBtns(5)">5</button></div>
+      <div class="btn2"><button onclick="numBtns(6)">6</button></div>
+      <div class="btn2"><button onclick="opBtns('+')">+</button></div>
+    </div>
+    <div class="row forthRow2">
+      <div class="btn2 pad"><button onclick="numBtns(1)">1</button></div>
+      <div class="btn2"><button onclick="numBtns(2)">2</button></div>
+      <div class="btn2"><button onclick="numBtns(3)">3</button></div>
+      <div class="btn2"><button class="equals" onclick="equals()">=</button></div>
+    </div>
+    <div class="row fifthRow2">
+      <div class="btn2 pad"><button onclick="percentageBtn('%')">%</button></div>
+      <div class="btn2"><button onclick="numBtns(0)">0</button></div>
+      <div class="btn2"><button onclick="decimalBtn('.')">.</button></div>
+    </div>          
+  </div>
+</div>
   <div class="u-cf"></div>
   <footer>
     <nav class="navTabs navbar fixed-bottom navbar-light">
@@ -137,7 +173,8 @@
     </nav>  
   </footer>
   <script src="./js/1st-js.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./js/calc02.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 </body>
 </html>

@@ -132,7 +132,7 @@ h2 {
   height          : 70px;
 }
 .thirdRow {
-  margin          : 50px 0 0 0;
+  margin          : 50px 0 100px 0;
   background-color: none;
   text-align      : center; 
 }
@@ -182,4 +182,54 @@ h2 {
   border              : 3px solid limegreen;
   padding             : 8px 17px;
   font-size           : 1.4em;
+}
+
+/*/////////////////// CALCULATOR BEGINS HERE!!!! /////////////////////////*/
+
+.calc {
+  height          : 400px !important;
+  width           : 350px !important;
+  border-radius   : 7%;
+  background-color: rgb(71, 71, 71);
+  border          : 1px solid black;
+  margin-bottom   : 75px;
+}
+.pad {
+  padding-left    : 15px;
+}
+.btn2 button{
+  height          : 50px !important;
+  width           : 75px !important;
+  margin          : 2px 2px !important;
+  padding         : 2px 2px;
+  color           : white !important;
+  font-size       : 2em !important;
+  border-radius   : 5% !important;
+  border-color    : rgb(0,0,0,0) !important ;
+  background-color: rgb(94, 94, 94);
+}
+.btn2 button:hover {
+  border-color    : lightgrey !important;
+}
+.btn2 button:active {
+  background-color: lightgrey !important;
+}
+.firstRow2 button {
+  background-color: rgb(19, 15, 15) !important;
+  color           : white !important;
+}
+.firstRow2 button:active {
+  background-color: rgb(185, 179, 179) !important;
+}
+.display {
+  margin         : 40px 0 15px 2px !important;
+  width           : 98%;
+  height          : 50px !important;
+  font-size       : 2em;
+  text-align      : right;
+}
+.equals {
+  background-color: orange !important;
+  position        : absolute;
+  padding         : 22px 0 76px 0 !important;
 }
