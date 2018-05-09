@@ -85,7 +85,7 @@ function f2C() {
 function an2Ph (){
   let annual = document.getElementById('annual').value;
   let hPw = document.getElementById('weekly').value;
-  let pH = annual / 12 / 4.3 / hPw;
+  let pH = annual / 52 / hPw;
   pH = roundUp(pH, 2);
   alert("Your hourly is " + pH + "$");
   //alert(annual);
