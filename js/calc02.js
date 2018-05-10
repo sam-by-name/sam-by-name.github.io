@@ -1,5 +1,5 @@
 let tempNum = '';                                    //  holds temp number
-let z = [];                                          //  holds string/numbers/ math operators in order
+let z = [];                                          //  holds string/numbers & math operators in order
 let ans = 0;                                         //  Holds answer
 
 ////////////// CLEAR BUTTON ////////////////////
@@ -10,17 +10,17 @@ function reset() {                                   // AC button function
   ans = 0;
 }
 
-////////////// BACKSPACE BUTTON ////////////////////
+////////////// BACKSPACE BUTTON ////////////////
 function delOne() {                                  // CE button function
   let tempDisp = document.getElementById('amount').value;
   let newDisp = tempDisp.slice(0, -1);
-  if (tempNum !== '') {
-    tempNum = tempNum.slice(0, -1);
-  } else { z = z.slice(0, -1)};                      // currently removes whole last index instead of just last digit of most recent
-  document.getElementById('amount').value = newDisp;
+  if (tempNum !== '') {                              // works on everything until it gets a percentage 
+    tempNum = tempNum.slice(0, -1);                  // and because that e.g: '33%' is now actually a 21.33 number
+  } else ((tempNum = z.pop()) && delOne());          // the whats being removed from the display to whats   
+  document.getElementById('amount').value = newDisp; // being removed from the tempNum is out of whack
 }
 
-////////////// NUMBER BUTTONS ////////////////////
+////////////// NUMBER BUTTONS //////////////////
 function numBtns (a) {                               // num buttons function
   tempNum += a; 
   document.getElementById('amount').value += (a);
@@ -34,7 +34,7 @@ function minusBtn (a) {                              // operator buttons functio
   }     
 }
 
-////////PLUS MINUS DIVIDE TIMES BUTTONS ///////////
+//////  PLUS MINUS DIVIDE TIMES BUTTONS  ///////    
 function opBtns (a) {                                // operator buttons function
   if (tempNum !== '') {
   z.push(tempNum)
@@ -44,19 +44,19 @@ function opBtns (a) {                                // operator buttons functio
   document.getElementById('amount').value += a;
 }
 
-////////////// DECIMAL POINT  BUTTON //////////////
+////////////// DECIMAL POINT  BUTTON ///////////
 function decimalBtn (a) {                            // operator buttons function
   tempNum += '.';
   document.getElementById('amount').value += a;
 }
 
-////////////// PERCENTAGE BUTTON //////////////////////
+////////////// PERCENTAGE BUTTON ///////////////
 function percentageBtn (a) {                         // operator buttons function
   tempNum = tempNum / 100 * z[z.length -2];
   document.getElementById('amount').value += a;
 }
 
-//////////////// Equals ///////////////////////////
+//////////////// Equals ////////////////////////
 function equals() {    
   z.push(tempNum);                              // add final number to z                                       
   ans = Number(z[0]);                           // ans equals first index of z and changes to a number 
