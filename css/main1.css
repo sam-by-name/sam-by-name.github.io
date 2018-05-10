@@ -134,4 +134,8 @@ code {
 .minesweeper {
   color               : red;
 }
-
+pre {
+  padding-top         : 15px;
+  color               : lightgreen !important;
+  flex-wrap: nowrap!important; /* doesn't work with scaling*/
+}
