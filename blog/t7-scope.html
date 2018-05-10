@@ -58,14 +58,38 @@
         <h5>            
           <strong> What 'scope' is, and how it works in JavaScript.</strong>
         </h5>
+        local, inside a function is inside scope
+        local variables are deleted when the function that contains them is in active 
+        global variables are only deleted once the window.tab is closed 
+        .. but recreated when the page is loaded again
+        global, outside a functions as you might of guessed is global
+        undeclared variables that are given a value will automatically become global
+        function scope
+        scope determines what can see what be where its placed and how its defined
+        variables inside a function are not seen or accessible outside of said function
+        <br><br><br>
         <p>
-
+          Well dear friend, 'scope' as used inside JavaScript is actually quite similar to 
+          how we use it in our language and day to day lives.
+          Of-course it has its own quirks and so now I shall elaborate.
+          In JS there are two types of 'scope'
           <ul>
-            <li></li>
-            <li></li>
-            <li></li> 
+            <li>Global scope</li>
+            <li>Local scope</li>
           </ul>
-
+          They have been quite aptly named as they explain themselves quite well.
+          'Global scope' is the entirety of your code (HTML/CSS included) and so any 
+          function or variable declared in the 'global scope' of your JS is visible 
+          anywhere inside your code.
+          'Local scope' is the code inside your 'Global functions' that have been written inside 
+          the 'Global scope'. 
+          All variables declared inside the 'local scope' 
+          ('var' scat, no-one invited you) are only visible inside the 'Local scope'
+          'Local' can see the 'Global' but not the other way around.
+          A decent analogy is one of 'house rules' vs 'Country based Law', 
+          ie: It may very well be considered a kindness (or even mandatory) to hurl your
+          food at other people inside your home.
+          But I reckon that those house rules will not hold up so well outside of your home.
         </p>
       </div>
     </div>     
