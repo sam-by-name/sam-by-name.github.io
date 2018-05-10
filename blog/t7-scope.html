@@ -56,40 +56,56 @@
       <div class="col-xl-12 col-md-12">
         <h2>Scope</h2>        
         <h5>            
-          <strong> What 'scope' is, and how it works in JavaScript.</strong>
+          <strong> What 'Scope' is, and how it works in JavaScript.</strong>
         </h5>
-        local, inside a function is inside scope
-        local variables are deleted when the function that contains them is in active 
-        global variables are only deleted once the window.tab is closed 
-        .. but recreated when the page is loaded again
-        global, outside a functions as you might of guessed is global
-        undeclared variables that are given a value will automatically become global
-        function scope
-        scope determines what can see what be where its placed and how its defined
-        variables inside a function are not seen or accessible outside of said function
-        <br><br><br>
         <p>
-          Well dear friend, 'scope' as used inside JavaScript is actually quite similar to 
+          Well dear friend 'Scope' as used inside JavaScript is actually quite similar to 
           how we use it in our language and day to day lives.
           Of-course it has its own quirks and so now I shall elaborate.
-          In JS there are two types of 'scope'
+          In JS there are two types of 'Scope'
           <ul>
             <li>Global scope</li>
             <li>Local scope</li>
           </ul>
-          They have been quite aptly named as they explain themselves quite well.
-          'Global scope' is the entirety of your code (HTML/CSS included) and so any 
+          
+          'Global Scope' is the entirety of your code (HTML/CSS included) and so any 
           function or variable declared in the 'global scope' of your JS is visible 
           anywhere inside your code.
           'Local scope' is the code inside your 'Global functions' that have been written inside 
-          the 'Global scope'. 
-          All variables declared inside the 'local scope' 
-          ('var' scat, no-one invited you) are only visible inside the 'Local scope'
-          'Local' can see the 'Global' but not the other way around.
-          A decent analogy is one of 'house rules' vs 'Country based Law', 
+          the 'Global Scope'.<br>
+          All variables declared inside the 'Local Scope' are only visible inside the 'Local scope'
+          ('var' scat, no-one invited you). 'Local' can see the 'Global' but not the other way around.
+          A decent analogy is one of 'House rules' vs 'Societal rules', 
           ie: It may very well be considered a kindness (or even mandatory) to hurl your
-          food at other people inside your home.
+          food at other people inside your home.<br>
           But I reckon that those house rules will not hold up so well outside of your home.
+          Another example would be: If a car has heavily tinted windows, its occupants can freely see 
+          the world around them without what happens inside being visible to the 'Global Scope'.<br>
+          And now a technical example : 
+          <xmp class="example">
+            // This is the 'Global Scope' and everything that gets declared out here is visible and accessible everywhere.
+            
+            let global = "Thou shall not kill";    // I am a global variable
+
+            function globalFunction () {
+              let local = 'Throwing food is fun';  // I am a local variable
+              console.log(local);                  // Calling the variable 'local' here works 
+              console.log(global);                 // The same goes for 'global'
+            }
+             
+            console.log(local);                    // The variable 'local' does not exist here because it was 
+            declared inside 'globalFunction()' and as such is inside local scope.
+
+            console.log(global);                   // The variable 'global' works here and so the console will print
+            'Thou shall not kill'.
+
+            console.log(globalFunction());         //The function declaration is in global scope and so its contents will now get printed
+            'Throwing food is fun'
+            'Thou shall not kill'
+
+          
+
+          </xmp>
         </p>
       </div>
     </div>     
