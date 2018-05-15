@@ -127,7 +127,6 @@ h2 {
 }
 .secondRow {
   margin          : 50px 0 0 0;
-  /*background-color: blue;*/
   text-align      : center; 
   height          : 70px;
 }
@@ -154,20 +153,6 @@ h2 {
   background      : linear-gradient(DeepSkyBlue, Black);
   text-align      : center;  
 }
-
-/*
-#clear  {
-  clear           : both;
-}
-  width           : 1px;
-  background      : black;
-  transition      : width 5s;
-  transition-timing-function : cubic-bezier(0,0,1,1);
-}
-.container p:hover{
-  width           : 100%;
-}
-*/
 .minesweeper {
   color               : rgb(248, 12, 228);
   font-weight         : 600;       
